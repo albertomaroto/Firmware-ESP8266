@@ -1,4 +1,5 @@
-//30.01.2019 a las 2020
+//30.01.2019 a las 2020 (revision 13.02)
+//Alberto Maroto Martin
 
 #include <ESP8266WiFi.h>
 #include <Ticker.h>
@@ -131,7 +132,7 @@ void conectar(String ip, String puerto, String nombre, String ssid, String pass,
       bssid = "VM-"+macAdd;
       bssid.toCharArray(cssid,50);
       
-      WiFi.softAP(cssid, "12345678"); //returned boolean value!
+      WiFi.softAP(cssid, "12345678"); 
       
       interrupcion.attach(10, manejarInterrupcion);
 
@@ -172,7 +173,7 @@ void configurar() {
 
   String HTTP_req = ""; //para guardar la petición del cliente
 
-  boolean result = WiFi.softAP(apName, "12345678"); //check assigment
+  boolean result = WiFi.softAP(apName, "12345678"); 
 
   server.begin();
 

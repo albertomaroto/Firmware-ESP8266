@@ -1,4 +1,5 @@
-//30.01.2019 a las 2020
+//30.01.2019 a las 2020 (revision 13.02)
+//Alberto Maroto Martin
 
 #include <ESP8266WiFi.h>
 #include <Ticker.h>
